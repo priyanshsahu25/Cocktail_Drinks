@@ -58,7 +58,7 @@ const SearchForm = () => {
     <>
     
        <form style={formStyle} onSubmit={(e) => e.preventDefault()}>
-      <h3 style={titleStyle}>Explore the Cocktails!!</h3>
+      {!loading  && <h3 style={titleStyle}>Explore the Cocktails!!</h3>}
       <input
         type="text"
         value={searchTerm}
