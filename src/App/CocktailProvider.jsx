@@ -3,7 +3,7 @@ import CocktailContext from './CocktailContext';
 import axios from 'axios';
 
 const CocktailProvider = ({ children }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState(' ');
   const [loading, setLoading] = useState(true);
   const [cocktails, setCocktails] = useState([]);
   const [noCocktails,setNoCocktails]= useState(false)
@@ -19,6 +19,10 @@ const CocktailProvider = ({ children }) => {
           setLoading(false)
         },600)
       } catch (error) {
+        
+
+        
+
         console.log(error);
         setLoading(false);
       }
