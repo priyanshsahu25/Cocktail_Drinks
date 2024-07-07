@@ -11,10 +11,10 @@ function App() {
 
   return (
     <>
-    <h1>{searchTerm}</h1>
+   
       <SearchForm/>
       <CocktailList/>
-      <Loading/>
+      
     </>
   )
 }
